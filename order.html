@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap" rel="stylesheet">
+
+    <!-- icons feather -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <link rel="stylesheet" href="order.css">
+    <script src="https://kit.fontawesome.com/7147c5426c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- navbar start -->
+    <nav class="navbar">
+        <a href="#home" class="navbar-logo"> <img src="img/logo.svg" alt=""></a>
+
+        <div class="navbar-nav">
+            <a href="index.html" class="page-scroll">Beranda</a>
+            <!-- <a href="#about">Tentang Kami</a> -->
+            <a href="index.html #menu" class="page-scroll">Produk</a>
+            <a href="index.html #products" class="page-scroll">Galeri</a>
+            <a href="index.html #kontak" class="page-scroll">Hubungi Kami</a>
+        </div>
+
+        <div class="navbar-extra">
+            <a href="login.html" id="search-button"><i data-feather="user"></i></a>
+            <a href="#" id="shopping-cart-button"><i data-feather="shopping-cart"></i></a>
+            <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+        </div>
+
+        <!-- Search Form Start -->
+        <!-- <div class="search-form">
+            <input type="search" id="search-box" placeholder="Search Here...">
+            <label for="search-box"><i data-feather="search"></i></label>
+        </div> -->
+        <!-- Search Form End -->
+
+        <!-- Shopping Cart Start -->
+        <div class="shopping-cart">
+            <div class="cart-item">
+                <img src="img/produk 1.svg" alt="Produk 1">
+                <div class="item-detail">
+                    <h3>Genteng Garuda Beton</h3>
+                    <!-- <div class="product-stars">
+                        <i data-feather="star" class="star-full"></i>
+                        <i data-feather="star" class="star-full"></i>
+                        <i data-feather="star" class="star-full"></i>
+                        <i data-feather="star"></i>
+                        <i data-feather="star"></i>
+                    </div> -->
+                    <!-- <div class="item-price">IDR 30K <span>IDR 55K</span></div> -->
+                </div>
+                <i data-feather="trash-2" class="remove-item"></i>
+            </div>
+            <div class="cart-item">
+                <img src="img/produk 2.svg" alt="Produk 2">
+                <div class="item-detail">
+                    <h3>Genteng Garuda </h3>
+                    <!-- <div class="product-stars">
+                        <i data-feather="star" class="star-full"></i>
+                        <i data-feather="star" class="star-full"></i>
+                        <i data-feather="star"></i>
+                        <i data-feather="star"></i>
+                        <i data-feather="star"></i>
+                    </div> -->
+                    <!-- <div class="item-price">IDR 40K <span>IDR 55K</span></div> -->
+                </div>
+                <i data-feather="trash-2" class="remove-item"></i>
+            </div>
+            <div class="cart-item">
+                <img src="img/produk 3.svg" alt="Produk 3">
+                <div class="item-detail">
+                    <h3>Genteng Prentol</h3>
+                    <!-- <div class="product-stars">
+                        <i data-feather="star" class="star-full"></i>
+                        <i data-feather="star" class="star-full"></i>
+                        <i data-feather="star" class="star-full"></i>
+                        <i data-feather="star" class="star-full"></i>
+                        <i data-feather="star"></i>
+                    </div> -->
+                    <!-- <div class="item-price">IDR 50K <span>IDR 55K</span></div> -->
+                </div>
+                <i data-feather="trash-2" class="remove-item"></i>
+            </div>
+        </div>
+        <!-- Shopping Cart End -->
+    </nav>
+    <!-- navbar end-->
+
+    <section id="menu" class="menu">
+        <div class="navbar-extra">
+            <a href="index.html" id="search-button"><i data-feather="arrow-left-circle"></i></a>
+        </div>
+    
+        <div class="row">
+            <div class="menu-card">
+                <img src="img/produk 1.svg" alt="Espresso" class="menu-card-img">
+                <!-- <h3 class="menu-card-title">- Genteng Garuda Beton -</h3> -->
+                <!-- <p class="menu-card-price">IDR 15K</p> -->
+                
+            </div>
+            <div class="menu-card1">
+                <h1> Genteng Kia </h1>
+                <h3>Rp 53.000</h3>
+                <a href="order.html" class="cta">- 1 +</a>
+                <a href="order.html" class="cta1">Masuk Keranjang</a>
+                <!-- <h3 class="menu-card-title">- Genteng Garuda -</h3> -->
+                <!-- <p class="menu-card-price">IDR 12K</p> -->
+                
+            </div>
+        </div>
+    </section>
+
+    <div class="hero">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="register()">Desk</button>
+                <button type="button" class="toggle-btn" onclick="login()" >Ukuran</button>
+            </div>
+            <!-- <div class="social-icons">
+                <img src="img/whatsapp.svg">
+                <img src="img/instagram.svg">
+                <img src="img/square-facebook.svg">
+            </div> -->
+            <form id="login" class="input-group">
+                <p>Genteng jenis ini terbuat dari pasir, bahan material semen, dan fly ash yang dicampur dengan air dan dicetak, lalu dikeringkan.</p>
+                <!-- <input type="text" class="input-field" placeholder="User Id" required>
+                <input type="text" class="input-field" placeholder="Enter Password" required> -->
+                <!-- <input type="checkbox" class="check-box"><span>Remember Password</span> -->
+                <!-- <button type="submit" class="submit-btn"><a href="index.html">Log In</a></button> -->
+            </form>
+             <form id="register" class="input-group">
+                <p>Panjang		       : 31 Cm </p>
+                <p>Lebar		       : 31 Cm </p>
+                <p>Jarak		       : 26 Cm </p>
+                <p>Berat		       : 3.3 kg</p>
+                <p>Jumah/m2 		   : 14.5 Pcs</p>
+
+                    
+                <!-- <input type="text" class="input-field" placeholder="User Id" required>
+                <input type="email" class="input-field" placeholder="Email Id" required>
+                <input type="text" class="input-field" placeholder="Enter Password" required> -->
+                <!-- <input type="checkbox" class="check-box"><span>Agree to the terms & Cond.</span>
+                <button type="submit" class="submit-btn">Register</button> -->
+            </form>
+        </div>
+
+        <!-- footer start -->
+        <footer id="kontak">
+            <div class="socials">
+                <a href="https://www.instagram.com/tomharrdd/"><i data-feather="instagram"></i></a>
+                <a href="https://twitter.com/tomharrdd"><i data-feather="twitter"></i></a>
+                <a href="https://www.facebook.com/Tom Hard Tampubolon/"><i data-feather="facebook"></i></a>
+            </div>
+
+            <div class="links">
+                <a href="index.html" class="page-scroll">Beranda</a>
+                <a href="index.html #menu" class="page-scroll">Produk</a>
+                <a href="index.html #produts" class="page-scroll">Galeri</a>
+                <a href="index.html #contact" class="page-scroll">Hubungi Kami</a>
+            </div>
+
+            <div class="credit">
+                <p>Created by <a href="">Kel 16</a>. |&copy; 2023.</p>
+            </div>
+        </footer>
+        <!-- footer end -->
+    </div>
+
+    
+
+    <script>
+        var x = document.getElementById("login");
+        var y = document.getElementById("register");
+        var z = document.getElementById("btn");
+
+        function login(){
+            x.style.left = "-400px";
+            y.style.left = "50px";
+            z.style.left = "110px";
+        }
+        function register(){
+            x.style.left = "50px";
+            y.style.left = "450px";
+            z.style.left = "0";
+        }
+
+    // toogle class active untuk hamburger menu
+    const navbarNav = document.querySelector
+    ('.navbar-nav');
+    // ketika hamburger menu diklik
+    document.querySelector('#hamburger-menu').onclick = ( ) => {
+    navbarNav.classList.toggle('active');
+    };
+
+    // toogle class active untuk shopping cart
+    const shoppingCart = document.querySelector('.shopping-cart');
+    // const cartItem = document.querySelector('.cart-item');
+
+    document.querySelector('#shopping-cart-button').onclick = (e) => {
+    shoppingCart.classList.toggle('active');
+    // cartItem.focus();
+    e.preventDefault();  
+    };
+
+// klik diluar sidebar untuk menghilangkan nav
+    const hm = document.querySelector ('#hamburger-menu');
+    const sc = document.querySelector ('#shopping-cart-button')
+
+    document.addEventListener('click', function(e) {
+        if(!hm.contains(e.target) && !navbarNav.contains(e.target)) {
+        navbarNav.classList.remove('active');
+        }
+        if(!sc.contains(e.target) && !shoppingCart.contains(e.target)) {
+        shoppingCart.classList.remove('active');
+        }
+    });
+     </script>
+
+     <!-- feather icon -->
+    <script>
+        feather.replace()
+    </script>
+
+    
+</body>
+</html> 

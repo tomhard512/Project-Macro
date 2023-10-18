@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+    <script src="https://kit.fontawesome.com/7147c5426c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section id="home">
+            <nav>
+                <a href="#home" class="navbar-logo"> <img src="img/logo.svg" alt=""></a>
+                <ul>
+                    <li><a href="">Selamat Datang Di Website Gentengin</a></li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+
+    <div class="hero">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="register()">Login</button>
+                <button type="button" class="toggle-btn" onclick="login()" >Register</button>
+            </div>
+            <div class="social-icons">
+                <img src="img/whatsapp.svg">
+                <img src="img/instagram.svg">
+                <img src="img/square-facebook.svg">
+            </div>
+            <form id="login" class="input-group">
+                <input type="text" class="input-field" placeholder="User Id" required>
+                <input type="text" class="input-field" placeholder="Enter Password" required>
+                <input type="checkbox" class="check-box"><span>Remember Password</span>
+                <button type="submit" class="submit-btn"><a href="index.html">Log In</a></button>
+            </form>
+             <form id="register" class="input-group">
+                <input type="text" class="input-field" placeholder="User Id" required>
+                <input type="email" class="input-field" placeholder="Email Id" required>
+                <input type="text" class="input-field" placeholder="Enter Password" required>
+                <input type="checkbox" class="check-box"><span>Agree to the terms & Cond.</span>
+                <button type="submit" class="submit-btn">Register</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        var x = document.getElementById("login");
+        var y = document.getElementById("register");
+        var z = document.getElementById("btn");
+
+        function login(){
+            x.style.left = "-400px";
+            y.style.left = "50px";
+            z.style.left = "110px";
+        }
+        function register(){
+            x.style.left = "50px";
+            y.style.left = "450px";
+            z.style.left = "0";
+        }
+     </script>
+</body>
+</html> 
